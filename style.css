@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Poppins';
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.frame {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0,0.8);
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border: 3px solid white;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.container {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  color: white;
+  text-align: center;
+  margin-top: -60px;
+}
+.btn {
+  text-decoration: none;
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.flag{
+  position: absolute;
+  top:42px;
+  right: -305px;
+  width: 200px;
+  height: 300px;
+}
+.flag img{
+  width: 100%;
+  transform: rotate(90deg);
+  /* border-top-right-radius:50px ;
+  border-bottom-right-radius:50% ; */
+  /* box-shadow: 10px -5px 15px #dfbd00; */
+  box-shadow: 10px -5px 15px #818181;
+}
+#ellipse-1 {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation-name: ellipse-1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#ellipse-2 {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transform: rotate(30deg);
+  animation-name: ellipse-2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+#ellipse-3 {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transform: rotate(70deg);
+  animation-name: ellipse-3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@keyframes ellipse-1 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ellipse-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ellipse-3 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.btn:hover {
+  background-color: rgb(225, 225, 225);
+  border-color: rgb(225, 225, 225);
+}
+.frame:hover .ellipse {
+  
+  opacity: 0.5;
+}
+.quiz{
+  text-align: center;
+}
+.question{
+  font-family: "Pacifico", cursive;
+  letter-spacing: 5px;
+  font-size:15px;
+  text-transform: uppercase;
+  padding: 20px 4px;
+}
+.option-button{
+  background-color: transparent;
+  color:#fff;
+  border:none;
+  outline: none;
+  padding: 15px;
+  margin:10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 300px;
+  border:1px solid #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+}
+.option-button.selected{
+  background-color: #dfbd00;
+  border:1px solid #dfbd00;
+}
+.button {
+  display: inline-block;
+  padding: 20px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.button:hover {
+  background-color: #ffb71d;
+}
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.hide{
+  display: none;
+  background-color: #ffb71d;
+}
+.result-image{
+  width: 200px;
+  margin:auto;
+}
+.result-image img{
+  width: 100%;
+}
+.flag-btn{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 80px; */
+  width:170px;
+}
+.flag-btn.hover{
+  background-image:'linear-gradient(to left, rgba(0,0,0,0.9), rgba(0,0,0,0.5))';
+}
