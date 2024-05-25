@@ -2,7 +2,7 @@ const quizData = [
   {
     question: 'What is the capital of Palestine?',
     options: ['Jerusalem ', 'Rafah', 'Gaza', 'Ramallah'],
-    answer: 'Paris',
+    answer: 'Jerusalem',
     image:'backjerulasem.jpeg',
     flag: 'flagpalestine.png',
   },
